@@ -1,0 +1,3 @@
+# Proxy da API: mesma origem no browser -> sem CORS. Tem de vir ANTES do fallback SPA.
+/api/*  https://essential-seven.vercel.app/api/:splat  200
+/*      /index.html  200

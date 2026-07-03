@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Esconde a scrollbar (usado na navegação do admin com setas) */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Grelha responsiva da Seccao Historia (1 coluna no mobile, 2 no desktop) */
+.story-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 1024px) {
+  .story-grid {
+    grid-template-columns: var(--story-cols, 1fr 1.4fr);
+  }
+}
+
+body {
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #F9F6F0;
+  color: #3B2618;
+}
+
+.font-serif-display, [class*="font-serif"] {
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "kern" 1, "liga" 1;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.product-img-wrap {
+  overflow: hidden;
+}
+
+.product-img-wrap img {
+  transition: transform 0.6s ease;
+}
+
+.product-img-wrap:hover img {
+  transform: scale(1.04);
+}
+
+@keyframes zoomOut {
+  from { transform: scale(1.12); }
+  to   { transform: scale(1); }
+}
+
+.hero-img {
+  animation: zoomOut 1.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.fade-up { animation: fadeUp 0.7s ease forwards; }
+.fade-up-delay-0 { animation-delay: 0ms; }
+.fade-up-delay-1 { animation-delay: 100ms; }
+.fade-up-delay-2 { animation-delay: 200ms; }
+.fade-up-delay-3 { animation-delay: 300ms; }
+.fade-up-delay-4 { animation-delay: 400ms; }
+
+@keyframes searchGlow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(139, 94, 60, 0.12); border-color: rgba(139, 94, 60, 0.25); }
+  50%       { box-shadow: 0 0 10px 3px rgba(139, 94, 60, 0.1); border-color: rgba(139, 94, 60, 0.55); }
+}
+
+@keyframes searchSlideDown {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.search-pill {
+  animation: searchGlow 2.8s ease-in-out infinite;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+.search-pill:active { transform: scale(0.97); }
+
+.search-open-anim { animation: searchSlideDown 0.22s ease forwards; }
+
+@keyframes menuSlideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.mobile-menu-anim { animation: menuSlideDown 0.22s ease forwards; }
+
+@keyframes menuSlideUp {
+  from { opacity: 1; transform: translateY(0); }
+  to   { opacity: 0; transform: translateY(-10px); }
+}
+
+.mobile-menu-anim-out { animation: menuSlideUp 0.2s ease forwards; }
+
+/* Scroll reveal (efeito editorial nas seccoes da home) */
+.reveal {
+  opacity: 0;
+  transform: translateY(34px);
+  transition: opacity 0.9s cubic-bezier(0.22, 0.61, 0.36, 1),
+              transform 0.9s cubic-bezier(0.22, 0.61, 0.36, 1);
+  will-change: opacity, transform;
+}
+.reveal-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+}
+
+/* ---------- Animações extra ---------- */
+
+/* Stagger extra para grelhas maiores */
+.fade-up-delay-5 { animation-delay: 500ms; }
+.fade-up-delay-6 { animation-delay: 600ms; }
+.fade-up-delay-7 { animation-delay: 700ms; }
+
+/* Fade simples */
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+.fade-in { animation: fadeIn 0.7s ease forwards; }
+
+/* Elevar suavemente ao passar o rato (cartões) */
+.hover-lift { transition: transform 0.35s cubic-bezier(0.22,0.61,0.36,1), box-shadow 0.35s ease; }
+.hover-lift:hover { transform: translateY(-5px); box-shadow: 0 14px 34px -16px rgba(59,38,24,0.32); }
+
+/* Pressão tátil ao clicar (botões) */
+.press { transition: transform 0.12s ease; }
+.press:active { transform: scale(0.95); }
+
+/* Pop de entrada (botão flutuante, chips) */
+@keyframes popIn {
+  0%   { opacity: 0; transform: scale(0.8) translateY(10px); }
+  60%  { opacity: 1; transform: scale(1.05) translateY(0); }
+  100% { transform: scale(1); }
+}
+.pop-in { animation: popIn 0.38s cubic-bezier(0.22,0.61,0.36,1) forwards; }
+
+/* Pulso ao adicionar/remover da box */
+@keyframes boxPop {
+  0%   { transform: scale(1); }
+  40%  { transform: scale(1.18); }
+  100% { transform: scale(1); }
+}
+.box-pop { animation: boxPop 0.38s cubic-bezier(0.22,0.61,0.36,1); }
+
+/* Traço que cresce da esquerda */
+@keyframes lineGrow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+.line-grow { transform-origin: left center; animation: lineGrow 0.7s ease forwards; }
+
+/* Flutuação subtil contínua */
+@keyframes floaty {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-4px); }
+}
+.floaty { animation: floaty 3.2s ease-in-out infinite; }
+
+/* Brilho de fundo que desliza (botões primários) */
+.shine { position: relative; overflow: hidden; }
+.shine::after {
+  content: "";
+  position: absolute; inset: 0;
+  background: linear-gradient(120deg, transparent 30%, rgba(255,255,255,0.28) 50%, transparent 70%);
+  transform: translateX(-120%);
+  transition: transform 0.6s ease;
+}
+.shine:hover::after { transform: translateX(120%); }
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-in, .pop-in, .line-grow, .floaty { animation: none; opacity: 1; transform: none; }
+  .hover-lift:hover { transform: none; box-shadow: none; }
+  .shine::after { display: none; }
+}
+
+/* Slider de preço (dual range) */
+.range-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 16px;
+  background: transparent;
+  margin: 0;
+}
+.range-thumb:focus { outline: none; }
+.range-thumb::-webkit-slider-runnable-track { background: transparent; height: 16px; }
+.range-thumb::-moz-range-track { background: transparent; height: 16px; }
+.range-thumb::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  pointer-events: auto;
+  width: 15px;
+  height: 15px;
+  border-radius: 9999px;
+  background: #8B5E3C;
+  border: 2px solid #F9F6F0;
+  box-shadow: 0 1px 3px rgba(59, 38, 24, 0.35);
+  cursor: pointer;
+}
+.range-thumb::-moz-range-thumb {
+  pointer-events: auto;
+  width: 15px;
+  height: 15px;
+  border-radius: 9999px;
+  background: #8B5E3C;
+  border: 2px solid #F9F6F0;
+  box-shadow: 0 1px 3px rgba(59, 38, 24, 0.35);
+  cursor: pointer;
+}
+
+/* Scroll discreto dos filtros (só aparece quando é preciso) */
+.filter-scroll { scrollbar-width: thin; scrollbar-color: rgba(139, 94, 60, 0.35) transparent; }
+.filter-scroll::-webkit-scrollbar { width: 6px; }
+.filter-scroll::-webkit-scrollbar-track { background: transparent; }
+.filter-scroll::-webkit-scrollbar-thumb {
+  background: rgba(139, 94, 60, 0.3);
+  border-radius: 9999px;
+}
+.filter-scroll::-webkit-scrollbar-thumb:hover { background: rgba(139, 94, 60, 0.5); }

@@ -1,0 +1,9 @@
+@echo off
+echo A gerar CSS (Tailwind)...
+cd /d "%~dp0app\frontend"
+call npm run build:css
+echo A compilar frontend...
+node node_modules/webpack-cli/bin/cli.js --mode development
+echo A iniciar backend...
+cd /d "%~dp0app\backend"
+python backend.py

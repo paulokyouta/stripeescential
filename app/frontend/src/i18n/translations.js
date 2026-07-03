@@ -1,0 +1,668 @@
+export const translations = {
+  pt: {
+    nav: {
+      home: "Início",
+      shop: "Loja",
+      box: "Box",
+      fragrances: "Aroma",
+      about: "Sobre nós",
+      contact: "Contato",
+      feedback: "Avaliações",
+    },
+    box: {
+      cta: "Monte a sua própria box",
+      mode_on: "Modo box ativo — toque em “Box” nos produtos",
+      start: "Montar Box",
+      done: "Concluir",
+      view: "Ver box",
+      your_box: "A sua box",
+      add: "Box",
+      added: "Na box",
+      add_full: "Adicionar à box",
+      remove: "Remover",
+      empty: "A sua box está vazia. Adicione produtos.",
+      subtotal: "Subtotal",
+      clear: "Limpar",
+      checkout: "Comprar box por WhatsApp",
+      cart_name: "Box",
+      add_to_cart: "Adicionar box ao carrinho",
+    },
+    hero: {
+      title: "ESCENTIAL",
+      subtitle: "Transformar espaços em memórias.",
+      cta: "Ver coleção",
+    },
+    story: {
+      eyebrow: "A Nossa História",
+      title: "Aroma. Conforto. Presença.",
+      text: "A Escential nasceu para trazer conforto, calma e sofisticação aos espaços do dia-a-dia através de fragrâncias trabalhadas com cuidado e um design intemporal.",
+      cta: "Saber mais",
+    },
+    fragrances: {
+      eyebrow: "As Nossas Fragrâncias",
+      title: "Pensadas para transformar o seu espaço.",
+      shop_now: "Comprar",
+      notes: "Notas",
+      categories: [
+        {
+          name: "Cotton Clouds",
+          desc: "Algodão suave, almíscar branco e conforto envolvente.",
+          notes: "Algodão, Almíscar Branco, Âmbar",
+          image: "/static/img/testimonial-1.jpg",
+        },
+        {
+          name: "Leather & Woods",
+          desc: "Madeiras profundas, couro e um luxo silencioso.",
+          notes: "Couro, Cedro, Sândalo",
+          image: "/static/img/testimonial-2.jpg",
+        },
+        {
+          name: "Sandalwood & Musk",
+          desc: "Sândalo cremoso com notas sensuais de almíscar.",
+          notes: "Sândalo, Almíscar, Baunilha",
+          image: "/static/img/testimonial-3.jpg",
+        },
+      ],
+    },
+    feeling: {
+      title_top: "MAIS QUE FRAGRÂNCIA.",
+      title_bottom: "Um sentimento.",
+      cta: "Descobrir a experiência",
+    },
+    reviews: {
+      title: "AMADAS PELA NOSSA COMUNIDADE",
+      list: [
+        { quote: "O aroma faz a minha casa parecer luxuosa. Estou obcecada.", author: "Sarah M." },
+        { quote: "Embalagem linda, qualidade incrível e velas que duram muito.", author: "James L." },
+        { quote: "A Escential já faz parte da minha rotina diária.", author: "Ana P." },
+      ],
+    },
+    footer: {
+      tagline: "Transformar espaços em memórias.",
+      shop_title: "Loja",
+      info_title: "Informação",
+      shop_links: ["Todos os produtos"],
+      info_links: ["Sobre nós", "FAQ", "Contacto"],
+      newsletter_title: "Junte-se à nossa comunidade",
+      newsletter_text: "Receba primeiro as novas fragrâncias e ofertas exclusivas.",
+      newsletter_placeholder: "O seu email",
+      rights: "Todos os direitos reservados.",
+    },
+    product: {
+      whatsapp: "WhatsApp",
+      whatsapp_buy: "Encomendar por WhatsApp",
+      whatsapp_hint: "Atendimento personalizado · Resposta em minutos",
+      scent_notes: "Notas Olfativas",
+      scent_profile: "Perfil Olfativo",
+      description: "Descrição",
+      back: "Voltar à loja",
+      collection: "Coleção Premium",
+      add: "Adicionar",
+      add_to_cart: "Adicionar ao carrinho",
+      price_on_request: "Preço sob consulta",
+      you_may_like: "Também pode gostar",
+      order_whatsapp: "Encomendar este artigo por WhatsApp",
+      delivery_uk_pre: "Entrega internacional",
+      delivery_uk_days: "disponível",
+      delivery_processed: "Encomendas processadas em 1-2 dias úteis",
+      delivery_shipped: "Envio disponível internacionalmente",
+      feat: {
+        handpoured: "Feito à Mão",
+        handpoured_t: "Vertido à mão em pequenos lotes",
+        natural: "Cera Natural",
+        natural_t: "Queima limpa, materiais sustentáveis",
+        lasting: "Longa Duração",
+        lasting_t: "45-50 horas de aroma",
+        gift: "Pronto a Oferecer",
+        gift_t: "Perfeito para oferecer ou guardar",
+      },
+    },
+    shop: {
+      title: "Produtos",
+      eyebrow: "A Coleção",
+      intro: "Explore toda a nossa gama de velas vertidas à mão e fragrâncias exclusivas, feitas em pequenos lotes para a casa.",
+      hint: "Filtre abaixo para encontrar as suas notas olfativas ou navegue por preço.",
+      results_for: "resultado(s) para",
+      filter: "Filtrar",
+      fragrance_notes: "Notas Olfativas",
+      price_range: "Intervalo de preço",
+      min: "Mín",
+      max: "Máx",
+      featured: "Em destaque",
+      featured_only: "Apenas em destaque",
+      on_sale: "Promoções",
+      on_sale_only: "Apenas em promoção",
+      sort_by: "Ordenar por",
+      clear: "Limpar filtros",
+      product_count: "Produto(s)",
+      show_results: "Mostrar {n} resultado(s)",
+      loading: "A carregar produtos...",
+      none: "Sem produtos disponíveis de momento.",
+      none_for: "Sem produtos para",
+      sort: {
+        order: "Ordem de destaque",
+        az: "Alfabética, A–Z",
+        za: "Alfabética, Z–A",
+        price_asc: "Preço: baixo a alto",
+        price_desc: "Preço: alto a baixo",
+      },
+    },
+    cart: {
+      title: "Carrinho",
+      empty: "O seu carrinho está vazio.",
+      browse: "Ver a loja",
+      subtotal: "Subtotal",
+      delivery_note: "Entrega confirmada na encomenda · Envio no Reino Unido",
+    },
+    fav: {
+      title: "Favoritos",
+      empty: "Ainda não guardou nenhum favorito.",
+      browse: "Ver a loja",
+      add_to_cart: "Adicionar ao carrinho",
+    },
+    faq: {
+      title: "Perguntas Frequentes",
+      eyebrow: "FAQ",
+      list: [
+        {
+          q: "Que produtos oferece a Escential?",
+          a: "Criamos velas perfumadas vertidas à mão, wax melts, sprays de ambiente, queimadores em cerâmica e caixas de oferta de luxo, cuidadosamente concebidos para transformar cada espaço num lugar de conforto.",
+        },
+        {
+          q: "Como faço uma encomenda?",
+          a: "Encomende diretamente pelo WhatsApp, através dos botões em cada produto ou no carrinho. A nossa equipa responde em minutos e acompanha o pedido do início ao fim.",
+        },
+        {
+          q: "Como pago? Posso pagar no site?",
+          a: "Não há pagamento com cartão no site. O pedido é combinado e confirmado pelo WhatsApp, onde tratamos consigo do pagamento e da entrega.",
+        },
+        {
+          q: "Posso montar a minha própria caixa?",
+          a: "Sim! Na Loja, ative \"Montar Box\", escolha os produtos que quiser e finalize a box pelo WhatsApp — perfeita para oferecer.",
+        },
+        {
+          q: "Posso enviar a minha encomenda como oferta?",
+          a: "Sim! Todas as nossas Caixas de Oferta de Luxo vêm lindamente embaladas e prontas para oferecer. Pode ainda incluir uma mensagem personalizada com a sua encomenda.",
+        },
+        {
+          q: "Têm promoções?",
+          a: "Sim. Os produtos em promoção mostram o preço com desconto (e a percentagem) diretamente no site.",
+        },
+        {
+          q: "Em que moeda estão os preços?",
+          a: "Os preços aparecem em libras (£) ou euros (€). Pode trocar de moeda e idioma no topo do site.",
+        },
+        {
+          q: "Fazem entregas? Quanto tempo demora?",
+          a: "Fazemos envios internacionais. As encomendas são processadas em 1-2 dias úteis; o prazo de entrega depende do destino.",
+        },
+        {
+          q: "Os produtos são veganos e cruelty-free?",
+          a: "Sim. Todos os produtos Escential são formulados sem ingredientes de origem animal e nunca testados em animais.",
+        },
+        {
+          q: "Quanto tempo duram as velas e como cuido delas?",
+          a: "Duram em média 40 a 50 horas. Na primeira utilização deixe a cera derreter por completo à superfície; apare o pavio a ~5mm antes de acender e não queime mais de 4 horas seguidas.",
+        },
+        {
+          q: "Como posso contactar a Escential?",
+          a: "Fale connosco pelo WhatsApp ou pelo email escentialfragrance05@gmail.com. Também estamos no Instagram em @escential.collection.",
+        },
+      ],
+    },
+    privacy: {
+      eyebrow: "Legal",
+      title: "Política de Privacidade",
+      updated: "Última atualização: julho de 2026",
+      sections: [
+        { title: "Quem Somos", blocks: [
+          "A Escential Fragrances (\"nós\") é uma marca artesanal de velas perfumadas vertidas à mão e conjuntos de oferta. As encomendas são feitas e combinadas através do WhatsApp, e não por um checkout online. Estamos empenhados em proteger os seus dados pessoais e tratá-los de forma responsável.",
+          "Para qualquer questão relacionada com privacidade, contacte-nos em escentialfragrance05@gmail.com.",
+        ]},
+        { title: "Que Dados Recolhemos", blocks: [
+          "Podemos recolher as seguintes informações quando interage connosco:",
+          { list: [
+            { b: "Dados de contacto", t: "— nome, email e número de telefone fornecidos pelo WhatsApp ou pelo formulário de contacto." },
+            { b: "Dados da encomenda", t: "— produtos encomendados, morada de entrega e detalhes da compra quando encomenda pelo WhatsApp." },
+            { b: "Dados de utilização", t: "— páginas visitadas e navegação geral, recolhidos de forma anónima através de análises básicas." },
+            { b: "Preferências locais", t: "— o idioma, moeda, carrinho, box e favoritos ficam guardados no seu navegador (armazenamento local) para melhorar a experiência. Ficam no seu dispositivo e não nos são enviados." },
+          ]},
+          "Não aceitamos pagamentos com cartão neste site, por isso nunca recolhemos nem guardamos dados de cartão ou bancários.",
+        ]},
+        { title: "Pagamentos", blocks: [
+          "Não existe pagamento com cartão no site. Ao fazer uma encomenda, é encaminhado para o WhatsApp para confirmar os detalhes, e qualquer pagamento é combinado diretamente entre si e nós. Assim, nenhum dado de cartão é processado ou guardado através deste site.",
+        ]},
+        { title: "Como Usamos os Seus Dados", blocks: [
+          "Usamos a informação recolhida para:",
+          { list: [
+            "Processar e concluir as suas encomendas.",
+            "Comunicar consigo sobre a sua compra por WhatsApp ou email.",
+            "Melhorar o nosso site e a experiência do cliente.",
+          ]},
+          "Nunca venderemos os seus dados pessoais a terceiros.",
+        ]},
+        { title: "Comunicações por WhatsApp", blocks: [
+          "Quando nos contacta ou encomenda pelo WhatsApp, as suas mensagens e número de telefone são tratados através da plataforma do WhatsApp, regida pela Política de Privacidade da Meta. Usamos esta informação apenas para processar a sua encomenda e prestar apoio ao cliente.",
+        ]},
+        { title: "Cookies", blocks: [
+          "O nosso site pode usar cookies essenciais para garantir o funcionamento básico. Não usamos cookies de rastreio ou publicidade. Ao continuar a usar o site, consente a utilização de cookies essenciais.",
+        ]},
+        { title: "Retenção de Dados", blocks: [
+          "Guardamos os seus dados pessoais apenas durante o tempo necessário para a finalidade para que foram recolhidos, ou conforme exigido por lei. Os dados de encomendas podem ser mantidos até 7 anos para efeitos contabilísticos.",
+        ]},
+        { title: "Os Seus Direitos", blocks: [
+          "Ao abrigo do RGPD (Reino Unido e UE), tem o direito de:",
+          { list: [
+            "Aceder aos dados pessoais que temos sobre si.",
+            "Solicitar a correção de dados incorretos.",
+            "Solicitar a eliminação dos seus dados (\"direito a ser esquecido\").",
+            "Opor-se ou restringir o tratamento dos seus dados.",
+            "Portabilidade dos dados.",
+          ]},
+          "Para exercer qualquer destes direitos, contacte-nos em escentialfragrance05@gmail.com.",
+        ]},
+        { title: "Serviços de Terceiros", blocks: [
+          "Usamos os seguintes serviços de terceiros que podem tratar os seus dados:",
+          { list: [
+            { b: "WhatsApp (Meta)", t: "— para comunicações de encomenda e apoio ao cliente." },
+            { b: "Instagram (Meta)", t: "— o nosso perfil @escential.collection, se optar por seguir-nos ou enviar mensagem." },
+            { b: "Fornecedor de câmbio", t: "— usado apenas para mostrar os preços na sua moeda (£/€). Nenhum dado pessoal é partilhado." },
+          ]},
+        ]},
+        { title: "Alterações a Esta Política", blocks: [
+          "Podemos atualizar esta Política de Privacidade periodicamente. Quaisquer alterações serão publicadas nesta página com a data atualizada. Recomendamos que reveja esta página com regularidade.",
+        ]},
+        { title: "Contacto", blocks: [
+          "Se tiver dúvidas sobre esta Política de Privacidade ou sobre como tratamos os seus dados, contacte-nos:",
+          { list: [
+            "Email: escentialfragrance05@gmail.com",
+            "WhatsApp: disponível através do botão no nosso site.",
+          ]},
+        ]},
+      ],
+    },
+    feedback: {
+      eyebrow: "Avaliações",
+      title: "O que dizem os nossos clientes",
+      open: "Deixe a sua avaliação",
+      empty: "Ainda não há avaliações. Seja o primeiro a partilhar a sua experiência.",
+      modal_title: "A sua avaliação",
+      name: "O seu nome",
+      social: "Rede social (opcional)",
+      text: "A sua avaliação",
+      send: "Enviar",
+      sending: "A enviar…",
+      select_photo: "Selecionar foto",
+      change_photo: "Alterar foto",
+      processing: "A processar…",
+      thanks_title: "Obrigado!",
+      thanks_text: "A sua avaliação foi enviada e aparecerá no site após revisão.",
+      err_required: "Adicione o seu nome e a sua avaliação",
+      err_image: "Não foi possível processar a imagem",
+      err_send: "Não foi possível enviar a avaliação",
+      close: "Fechar",
+    },
+    admin: {
+      login_title: "Entrar no painel",
+      email: "Email", password: "Palavra-passe", login: "Entrar", logout: "Sair",
+      dashboard: "Painel", products: "Produtos", settings: "Definições",
+      add_product: "Adicionar Produto", edit: "Editar", delete: "Eliminar",
+      save: "Guardar", cancel: "Cancelar", featured: "Em destaque", show_home: "Mostrar na Home", active: "Ativo",
+      name_en: "Name",
+      desc_en: "Description",
+      notes_en: "Scent Notes",
+      price_gbp: "Price (GBP)",
+      images: "Imagens (URLs)", add_image: "Adicionar imagem",
+      position: "Posição", reorder_hint: "Arraste as linhas para reordenar os produtos",
+      auto_calc: "Calcular GBP automaticamente", eur_to_gbp: "Taxa EUR → GBP",
+      whatsapp_number: "Número WhatsApp (com indicativo, ex: 351912345678)",
+      saved: "Guardado", confirm_delete: "Confirma a eliminação?",
+    },
+  },
+  en: {
+    nav: {
+      home: "Home",
+      shop: "Shop",
+      box: "Box",
+      fragrances: "Scent",
+      about: "About Us",
+      contact: "Contact",
+      feedback: "Reviews",
+    },
+    box: {
+      cta: "Build your own box",
+      mode_on: "Box mode on — tap “Box” on products",
+      start: "Build a Box",
+      done: "Done",
+      view: "View box",
+      your_box: "Your box",
+      add: "Box",
+      added: "In box",
+      add_full: "Add to box",
+      remove: "Remove",
+      empty: "Your box is empty. Add some products.",
+      subtotal: "Subtotal",
+      clear: "Clear",
+      checkout: "Order box via WhatsApp",
+      cart_name: "Box",
+      add_to_cart: "Add box to cart",
+    },
+    hero: {
+      title: "ESCENTIAL",
+      subtitle: "Turning spaces into memories.",
+      cta: "Shop collection",
+    },
+    story: {
+      eyebrow: "Our Story",
+      title: "Scent. Comfort. Presence.",
+      text: "Escential was created to bring comfort, calm and sophistication into everyday spaces through carefully crafted scents and timeless design.",
+      cta: "Learn more",
+    },
+    fragrances: {
+      eyebrow: "Our Fragrances",
+      title: "Crafted to transform your space.",
+      shop_now: "Shop now",
+      notes: "Notes",
+      categories: [
+        {
+          name: "Cotton Clouds",
+          desc: "Soft cotton, white musk and warm comfort.",
+          notes: "Cotton, White Musk, Amber",
+          image: "/static/img/testimonial-1.jpg",
+        },
+        {
+          name: "Leather & Woods",
+          desc: "Deep woods, leather and quiet luxury.",
+          notes: "Leather, Cedarwood, Sandalwood",
+          image: "/static/img/testimonial-2.jpg",
+        },
+        {
+          name: "Sandalwood & Musk",
+          desc: "Creamy sandalwood with sensual musk notes.",
+          notes: "Sandalwood, Musk, Vanilla",
+          image: "/static/img/testimonial-3.jpg",
+        },
+      ],
+    },
+    feeling: {
+      title_top: "MORE THAN FRAGRANCE.",
+      title_bottom: "A feeling.",
+      cta: "Discover the experience",
+    },
+    reviews: {
+      title: "LOVED BY OUR COMMUNITY",
+      list: [
+        { quote: "The scent makes my whole home feel expensive. I'm obsessed.", author: "Sarah M." },
+        { quote: "Beautiful packaging, incredible quality and long lasting scents.", author: "James L." },
+        { quote: "Escential is now a part of my daily routine.", author: "Ana P." },
+      ],
+    },
+    footer: {
+      tagline: "Turning spaces into memories.",
+      shop_title: "Shop",
+      info_title: "Information",
+      shop_links: ["All products"],
+      info_links: ["About us", "FAQ", "Contact"],
+      newsletter_title: "Join our community",
+      newsletter_text: "Be the first to know about new fragrances and offers.",
+      newsletter_placeholder: "Your email",
+      rights: "All rights reserved.",
+    },
+    product: {
+      whatsapp: "WhatsApp",
+      whatsapp_buy: "Order via WhatsApp",
+      whatsapp_hint: "Personal service · Reply in minutes",
+      scent_notes: "Scent Notes",
+      scent_profile: "Scent Profile",
+      description: "Description",
+      back: "Back to shop",
+      collection: "Premium Collection",
+      add: "Add",
+      add_to_cart: "Add to cart",
+      price_on_request: "Price on request",
+      you_may_like: "You may also like",
+      order_whatsapp: "Order this item via WhatsApp",
+      delivery_uk_pre: "International delivery",
+      delivery_uk_days: "available",
+      delivery_processed: "Orders processed within 1-2 working days",
+      delivery_shipped: "Shipping available internationally",
+      feat: {
+        handpoured: "Hand-Poured",
+        handpoured_t: "Crafted with care in small batches",
+        natural: "Natural Wax",
+        natural_t: "Clean-burning, sustainable materials",
+        lasting: "Long Lasting",
+        lasting_t: "45-50 hours of scent",
+        gift: "Gift Ready",
+        gift_t: "Perfect for gifting or keeping",
+      },
+    },
+    shop: {
+      title: "Products",
+      eyebrow: "The Collection",
+      intro: "Shop our full range of hand-poured candles and signature fragrances, crafted in small batches for the home.",
+      hint: "Filter below to find your scent notes or browse by price.",
+      results_for: "result(s) for",
+      filter: "Filter",
+      fragrance_notes: "Fragrance Notes",
+      price_range: "Price range",
+      min: "Min",
+      max: "Max",
+      featured: "Featured",
+      featured_only: "Featured only",
+      on_sale: "On sale",
+      on_sale_only: "On sale only",
+      sort_by: "Sort by",
+      clear: "Clear filters",
+      product_count: "Product(s)",
+      show_results: "Show {n} result(s)",
+      loading: "Loading products...",
+      none: "No products available right now.",
+      none_for: "No products found for",
+      sort: {
+        order: "Featured order",
+        az: "Alphabetically, A–Z",
+        za: "Alphabetically, Z–A",
+        price_asc: "Price: low to high",
+        price_desc: "Price: high to low",
+      },
+    },
+    cart: {
+      title: "Cart",
+      empty: "Your cart is empty.",
+      browse: "Browse the shop",
+      subtotal: "Subtotal",
+      delivery_note: "Delivery confirmed on order · UK shipping",
+    },
+    fav: {
+      title: "Favorites",
+      empty: "You haven't saved any favorites yet.",
+      browse: "Browse the shop",
+      add_to_cart: "Add to cart",
+    },
+    faq: {
+      title: "Frequently Asked Questions",
+      eyebrow: "FAQ",
+      list: [
+        {
+          q: "What products does Escential offer?",
+          a: "We create hand-poured scented candles, wax melts, room sprays, ceramic burners and luxury gift boxes, thoughtfully crafted to transform every space into a place of comfort.",
+        },
+        {
+          q: "How do I place an order?",
+          a: "Order directly via WhatsApp using the buttons on each product or in the cart. Our team replies within minutes and guides you through the whole process.",
+        },
+        {
+          q: "How do I pay? Can I pay on the website?",
+          a: "There is no card payment on the website. Your order is arranged and confirmed over WhatsApp, where we handle payment and delivery with you.",
+        },
+        {
+          q: "Can I build my own box?",
+          a: "Yes! In the Shop, turn on \"Build a Box\", pick the products you love and check out the box via WhatsApp — perfect for gifting.",
+        },
+        {
+          q: "Can I send my order as a gift?",
+          a: "Yes! All of our Luxury Gift Boxes are beautifully packaged and ready for gifting. You can also include a personalised message with your order.",
+        },
+        {
+          q: "Do you have offers or discounts?",
+          a: "Yes. Products on sale show the discounted price (and the percentage off) directly on the site.",
+        },
+        {
+          q: "What currency are prices in?",
+          a: "Prices are shown in pounds (£) or euros (€). You can switch currency and language at the top of the site.",
+        },
+        {
+          q: "Do you deliver? How long does it take?",
+          a: "We ship internationally. Orders are processed within 1-2 working days; delivery time depends on the destination.",
+        },
+        {
+          q: "Are your products vegan and cruelty-free?",
+          a: "Yes. All Escential products are made without animal-derived ingredients and are never tested on animals.",
+        },
+        {
+          q: "How long do the candles last and how do I care for them?",
+          a: "They burn for about 40 to 50 hours on average. On the first burn, let the wax melt fully across the surface; trim the wick to ~5mm before lighting and don't burn for more than 4 hours at a time.",
+        },
+        {
+          q: "How can I contact Escential?",
+          a: "Reach us via WhatsApp or by email at escentialfragrance05@gmail.com. You can also find us on Instagram at @escential.collection.",
+        },
+      ],
+    },
+    privacy: {
+      eyebrow: "Legal",
+      title: "Privacy Policy",
+      updated: "Last updated: July 2026",
+      sections: [
+        { title: "Who We Are", blocks: [
+          "Escential Fragrances (\"we\", \"us\", \"our\") is an artisan brand of hand-poured scented candles and gift sets. Orders are placed and arranged through WhatsApp rather than an online checkout. We are committed to protecting your personal data and handling it responsibly.",
+          "For any privacy-related questions, you can contact us at escentialfragrance05@gmail.com.",
+        ]},
+        { title: "What Data We Collect", blocks: [
+          "We may collect the following information when you interact with us:",
+          { list: [
+            { b: "Contact information", t: "— name, email address, phone number provided via WhatsApp or our contact form." },
+            { b: "Order information", t: "— products ordered, delivery address and purchase details when you place an order through WhatsApp." },
+            { b: "Usage data", t: "— pages visited and general browsing behaviour, collected anonymously through basic analytics." },
+            { b: "Local preferences", t: "— your chosen language, currency, cart, box and favourites are stored in your browser (local storage) to improve your experience. This stays on your device and is not sent to us." },
+          ]},
+          "We do not take card payments on this website, so we never collect or store card or banking details.",
+        ]},
+        { title: "Payments", blocks: [
+          "There is no online card checkout on our site. When you place an order, you are taken to WhatsApp to confirm the details, and any payment is arranged directly between you and us. As a result, no payment card information is processed or stored through this website.",
+        ]},
+        { title: "How We Use Your Data", blocks: [
+          "We use the information collected to:",
+          { list: [
+            "Process and fulfil your orders.",
+            "Communicate with you about your purchase via WhatsApp or email.",
+            "Improve our website and customer experience.",
+          ]},
+          "We will never sell your personal data to third parties.",
+        ]},
+        { title: "WhatsApp Communications", blocks: [
+          "When you contact us or place an order via WhatsApp, your messages and phone number are handled through WhatsApp's platform, governed by Meta's Privacy Policy. We use this information solely to process your order and provide customer support.",
+        ]},
+        { title: "Cookies", blocks: [
+          "Our website may use essential cookies to ensure basic functionality. We do not use tracking or advertising cookies. By continuing to use our site, you consent to the use of essential cookies.",
+        ]},
+        { title: "Data Retention", blocks: [
+          "We retain your personal data only for as long as necessary to fulfil the purpose it was collected for, or as required by law. Order information is kept for up to 7 years for accounting purposes.",
+        ]},
+        { title: "Your Rights", blocks: [
+          "Under the UK GDPR and EU GDPR, you have the right to:",
+          { list: [
+            "Access the personal data we hold about you.",
+            "Request correction of inaccurate data.",
+            "Request deletion of your data (\"right to be forgotten\").",
+            "Object to or restrict processing of your data.",
+            "Data portability.",
+          ]},
+          "To exercise any of these rights, please contact us at escentialfragrance05@gmail.com.",
+        ]},
+        { title: "Third-Party Services", blocks: [
+          "We use the following third-party services which may process your data:",
+          { list: [
+            { b: "WhatsApp (Meta)", t: "— for order and customer communications." },
+            { b: "Instagram (Meta)", t: "— our profile @escential.collection, if you choose to follow or message us there." },
+            { b: "Exchange-rate provider", t: "— used only to display prices in your local currency (£/€). No personal data is shared with it." },
+          ]},
+        ]},
+        { title: "Changes to This Policy", blocks: [
+          "We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated date. We encourage you to review this page periodically.",
+        ]},
+        { title: "Contact", blocks: [
+          "If you have any questions about this Privacy Policy or how we handle your data, please contact us:",
+          { list: [
+            "Email: escentialfragrance05@gmail.com",
+            "WhatsApp: available via the button on our website.",
+          ]},
+        ]},
+      ],
+    },
+    feedback: {
+      eyebrow: "Reviews",
+      title: "What our clients say",
+      open: "Leave your feedback",
+      empty: "No reviews yet. Be the first to share your experience.",
+      modal_title: "Your feedback",
+      name: "Your name",
+      social: "Social link (optional)",
+      text: "Your feedback",
+      send: "Send feedback",
+      sending: "Sending…",
+      select_photo: "Select photo",
+      change_photo: "Change photo",
+      processing: "Processing…",
+      thanks_title: "Thank you!",
+      thanks_text: "Your feedback was sent and will appear on the site once it has been reviewed.",
+      err_required: "Please add your name and your feedback",
+      err_image: "Could not process the image",
+      err_send: "Could not send feedback",
+      close: "Close",
+    },
+    admin: {
+      login_title: "Sign in",
+      email: "Email", password: "Password", login: "Sign In", logout: "Sign Out",
+      dashboard: "Dashboard", products: "Products", settings: "Settings",
+      add_product: "Add Product", edit: "Edit", delete: "Delete",
+      save: "Save", cancel: "Cancel", featured: "Featured", show_home: "Show on Home", active: "Active",
+      name_pt: "Name (PT)", name_en: "Name (EN)",
+      desc_pt: "Description (PT)", desc_en: "Description (EN)",
+      notes_pt: "Notes (PT)", notes_en: "Notes (EN)",
+      price_eur: "Price (EUR)", price_gbp: "Price (GBP)",
+      images: "Images (URLs)", add_image: "Add image",
+      position: "Position", reorder_hint: "Drag rows to reorder products",
+      auto_calc: "Auto calculate GBP", eur_to_gbp: "EUR → GBP rate",
+      whatsapp_number: "WhatsApp number (with country code, e.g.: 351912345678)",
+      saved: "Saved", confirm_delete: "Confirm deletion?",
+    },
+  },
+};
+
+// Idiomas disponíveis (escalável: adicionar idioma = nova entrada + bloco em translations).
+export const LANGUAGES = {
+  pt: "Português",
+  en: "English",
+};
+
+export const DEFAULT_LANG = "en";
+
+export const tt = (lang, path) => {
+  const parts = path.split(".");
+  let cur = translations[lang] || translations.en;
+  for (const p of parts) {
+    cur = cur?.[p];
+    if (cur === undefined) {
+      // fallback para EN antes de devolver a própria chave
+      let en = translations.en;
+      for (const q of parts) {
+        en = en?.[q];
+        if (en === undefined) return path;
+      }
+      return en;
+    }
+  }
+  return cur;
+};
